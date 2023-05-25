@@ -1,0 +1,249 @@
+/* Author: Adam Fletcher
+Date: 4 May 2023
+Version: Week 10
+*/
+
+/*
+COLOURS
+#211d1c - dark brown (for text)
+#2f261d - brown
+#4389a2 - teal
+#c62d03 - burnt red
+*/
+
+/*GLOBAL SETTING
+----------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+body {
+	font-size: 16px;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	color: #211d1c;
+	margin: 0;
+}
+
+#wrapper {
+	position: relative;
+	width: 1200px; 
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.6em;
+	font-weight: 700;
+}
+
+a {
+	color: #225c71; /* dark teal */
+}
+
+a:visited {
+	color: #c62d03; /* burnt red */
+}
+
+
+
+/* HEADER
+----------------------------------------
+*/
+
+header {
+	background: #2f261d	url(images/img_header.webp) center/100%;
+	height: 430px;
+	color: #ffffff;	
+}
+	
+header h1 {
+	visibility: hidden;
+}
+
+header img {
+	position: relative;
+	z-index: 999;
+    height: 98px;
+}
+
+/* NAVIGATION
+----------------------------------------
+*/
+
+nav {
+	background-color: rgba(0,0,0,0.65);
+	position: absolute;
+	top: 0px; left: 0px;
+	width: 100%; /* = 1200px */
+	padding-top: 45px;
+
+}
+
+nav a {
+	color: #ffffff; /* white */
+	text-decoration: none;
+	padding: 10px 20px 15px 20px;
+}
+
+nav a:hover {
+	background-color: #9b1c31;
+}
+
+nav a:visited {
+	color: #ffffff;
+}
+
+nav ul {
+	padding-left: 110px;
+	list-style: none;
+}
+
+nav li {
+	display: inline;
+}
+
+nav span {
+    padding: 10px 20px 15px 20px;
+	background-color: #356d81;
+    color: #ffffff;
+}
+
+
+/* CONTENT 1
+----------------------------------------
+*/
+#two-columns {
+    display: flex;
+    margin: 30px 0;
+    text-align: center;
+}
+
+#two-columns img {
+    width: 100%;
+}
+
+#two-columns section {
+    padding: 0 20px;
+}
+/* CONTENT 2
+----------------------------------------
+*/
+#video {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    padding: 20px;
+}
+
+#video iframe {
+    height: 435px;
+    width: 555px;
+} 
+
+#video div {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#video div section {
+    padding-bottom: 20px;
+} 
+/* CONTENT 2 - Blockquote
+----------------------------------------
+*/
+
+blockquote {
+    background: #c62d03;
+    align-self: flex-end;
+    margin-bottom: 0;
+    padding: 20px 5px 5px 20px;
+    
+}
+
+blockquote i {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+/* SIDEBAR
+----------------------------------------
+*/
+.image-gallery {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.image-slides {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#image1:checked ~ .image-slides .slide:nth-child(1),
+#image2:checked ~ .image-slides .slide:nth-child(2),
+#image3:checked ~ .image-slides .slide:nth-child(3) {
+    opacity: 1;
+}
+
+.image-controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.control {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked ~ .image-controls label {
+    background-color: #888;
+}
+
+/* FOOTER
+----------------------------------------
+*/
+
+footer {
+    text-align: center;
+}
+
+footer li {
+    font-size: 0.8em;
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}

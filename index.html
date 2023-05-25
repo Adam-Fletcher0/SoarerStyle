@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- =========== Website Name ============== -->    
+    
+<head>
+	<meta charset="UTF-8">
+	<title>Soarer Style</title>
+	<link rel="icon" href="images/img_logo.gif" type="image/gif">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--This section allows me to change the website's browser name as well as the logo. It also contains the link for the CSS style sheet-->
+    
+<!-- =========== Title ============== -->
+<body>
+<div id="wrapper">
+
+     <header>
+        <a href="index.html" title="Home: Soarer Logo">
+        <img src="images/img_logo.gif" alt="Home: Soarer Logo" height="95"></a>
+        <a href="index.html"><h1>Soarer Style</h1></a>
+    </header>
+<!--By using href="indext.html" on the websites title I am able to make the website name into a link to the home page-->
+	
+<!-- =========== NAVIGATION ============== -->
+	<nav>
+        <ul>    
+            <li><a href="history.html" title="Soarer History">Soarer History</a></li>
+			<li><a href="engine.html" title="1UZ-FE">1UZ-FE</a></li>
+			<li><a href="contact.html" title="Contact us">Contact Us</a></li>
+        </ul>
+	</nav>
+<!--These titles will act as links to the websites pages, href allows me to link the other html pages and the title masks the file names behind relevant titles-->
+    
+<!-- This section below will contain the majority of the main page's content-->
+<main>
+<!-- ========= Main CONTENT AREA 1 ============ -->
+    <article id="two-columns">
+        <section>
+			<h2>Origins</h2>  
+            	<p>Ego vero isti, inquam, permitto. Sed fac ista esse non inportuna; Invidiosum nomen est, infame, suspectum. Nescio quo modo praetervolavit oratio. Utilitatis causa amicitia est quaesita. Si quae forte-possumus. Quod ea non occurrentia fingunt, vincunt Aristonem.</p> 
+                    
+                    <a href="images/img_soarhistory.jpeg" title="Soarer Flyer">
+                        <img src="images/img_soarhistory.jpeg" alt="Soarer Flyer" width="600" height="350"></a>          
+          
+              </section> 
+            
+		<section>
+			<h2>Engine</h2>
+            	<p>Ego vero isti, inquam, permitto. Sed fac ista esse non inportuna; Invidiosum nomen est, infame, suspectum. Nescio quo modo praetervolavit oratio. Utilitatis causa amicitia est quaesita. Si quae forte-possumus. Quod ea non occurrentia fingunt, vincunt Aristonem.</p>
+                
+            <a href="images/img_engine.jpeg" title="Soarer Engine">
+                <img src="images/img_engine.jpeg" alt="Soarer Engine" width="600" height="350"></a>
+            
+        </section>
+    </article>
+    
+<!-- This section is where I visually advertise my main webpages to encourage interaction from the user. I plan on having the images on the same level as seen in my wireframe however I currently lack the skills to do so. By adjusting the size of each of the images should leave space and frame them instead of blocking them together. -->
+    
+<!-- ========= Main CONTENT AREA 2 ============ -->	
+    <article id="video">
+        <section>
+                <iframe width="640" height="480" src="https://www.youtube.com/embed/hS-ysvO2hMc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+        </section>    
+        
+        <div>
+        <section>
+                <h2>Toyota Soarer Review</h2>
+				    <p>Sed haec nihil sane ad rem; Id enim natura desiderat. At hoc in eo M. Videmus igitur ut conquiescere ne infantes quidem possint. Si enim ad populum me vocas, eum. Age, inquies, ista parva sunt.Vestibulum et massa tempus, sagittis. Duis ut purus erat. Maecenas ac magna sapien. Etiam viverra ultricies quam a aliquam.</p>
+        </section>
+    
+        <blockquote>
+			<i>"The Lexus Coupe has so many gizmos under its pretty, pretty body that even the ham-fisted begins to feel like a grand-prix star"</i>
+
+			<p>
+			Jermey Clarkson <br>
+			Top Gear
+			</p>
+		</blockquote>
+        </div>
+    
+    </article>
+
+       
+</main>
+<!-- I used a youtube link in the middle of this page to give the viewer something engaging to watch. I was able to modify the youtube code from previous weeks work -->
+
+<!-- ============ SIDEBAR ================= -->	
+<!-- Slideshow container -->
+     <div class="image-gallery">
+         <input type="radio" name="image-radio" id="image1" checked>
+         <input type="radio" name="image-radio" id="image2">
+         <input type="radio" name="image-radio" id="image3">
+  
+    <div class="image-slides">
+      <div class="slide">
+        <img src="images/img_soarer.jpeg" alt="Image 1">
+      </div>
+      <div class="slide">
+        <img src="images/img_soarer2.jpeg" alt="Image 2">
+      </div>
+      <div class="slide">
+        <img src="images/img_soarer3.jpeg" alt="Image 3">
+      </div>
+    </div>
+  
+    <div class="image-controls">
+      <label for="image1" class="control"></label>
+      <label for="image2" class="control"></label>
+      <label for="image3" class="control"></label>
+    </div>
+  </div>
+<!-- I used a blockquote in my sidebar as it will be relivant to the video above it. I had also hoped to add a scroll function to the gallery images however I don't currently know how, hopefully we will learn cool functions like it later in the semester. For now they will remain static images with the hover and open functionality.-->
+
+<!-- ============= FOOTER ================ -->
+	<footer>
+		<ul>
+            <li>&copy; Soarer Style</li>
+            <li><a href="privacy.html" target="_self" title="Link to Privacy Policy">Privacy Policy</a></li>
+			<li>Contact us at: <a href="mailto:Drift@SoarerStyle.com">Drift@SoarerStyle.com</a></li>
+			<li>Find us at: 2 Bradford Street, Mount Lawley Western Australia 6050</li>
+        </ul>
+	</footer>
+    
+<!-- I opted to use another page for my privacy policy instead of a downloadable pdf at the advice of a webdesigner friend. An internal page in comparison to a downloadable PDF saves loading time. -->
+	
+</div>
+</body>
+</html>
+
+<!-- These Tags are necessary to close the HTML file -->
+
+
+
+
