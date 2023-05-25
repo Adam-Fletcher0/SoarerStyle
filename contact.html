@@ -37,8 +37,29 @@
 	<article>
 		<section>
 			<h2>Get In Touch</h2>
-				<p>Quorum altera prosunt, nocent altera. Falli igitur possumus. Ergo, inquit, tibi Q. Hoc loco tenere se Triarius non potuit. Quis istud, quaeso, nesciebat? Quorum sine causa fieri nihil putandum est.</p>
-                <p>Curabitur imperdiet nunc at nibh sodales interdum. Suspendisse vitae tempor ipsum, elementum ornare erat. Pellentesque mollis, ex et consequat suscipit, elit leo tincidunt ex, vel aliquet massa lectus consequat mi. Aliquam euismod tellus quis dolor tempor, at convallis velit molestie. Ut quis fringilla odio, sed placerat eros. Integer condimentum nec massa egestas scelerisque. Maecenas non lectus gravida, laoreet nisl vitae, imperdiet neque. Cras nunc neque, finibus at justo et, euismod elementum augue. Sed et venenatis neque. Aliquam sodales dui id dignissim aliquet. Nullam congue luctus nulla, non dapibus turpis aliquet suscipit. Pellentesque vitae arcu justo.</p>
+            <div class="container">
+                <form action="action_page.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
 		</section>
 		
 		<section>
